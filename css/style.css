@@ -131,6 +131,10 @@ img {
     color: #fff;
     padding-bottom: 188px;
     padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-heading {
@@ -189,7 +193,20 @@ img {
 
 .improv-item {
     width: calc((100% - 3 * 24px) / 4);
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.improv-box-svg {
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    justify-content: center;
+    align-items: center;
+}
 
 .improv-item-heading {
     font-weight: 500;
@@ -197,7 +214,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .improv-desc {
@@ -233,13 +249,17 @@ img {
 .team-item {
     background: #fff;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-image{
 }
 
 .team-card-content{
-    padding: 32px 0;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .team-item-heading {
@@ -249,7 +269,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
 }
 
 .team-desc {
@@ -257,6 +276,31 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+}
+
+.team-socials-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-socials-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team-socials-svg {
+    fill: white;
 }
 
 /* our portfolio */
@@ -322,13 +366,48 @@ footer {
     display: inline-block;
     margin-bottom: 16px;
 }
+
 .footer-logo .logo-part {
     color: #f4f4fd;
 }
+
 .footer-content {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-socials-heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-socials-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials-svg {
+    fill: white;
 }
